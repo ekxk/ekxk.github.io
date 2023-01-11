@@ -1,8 +1,9 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
 }
 
-.nav ul {
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -10,11 +11,11 @@
   background-color: #EFEFEF;
 }
 
-.nav li {
+nav li {
   float: left;
 }
 
-.nav li a {
+nav li a {
   display: block;
   color: #000000;
   text-align: center;
@@ -23,16 +24,41 @@
 }
 
 /* Change the link color on hover */
-.nav li a:hover {
+nav li a:hover {
   background-color: #DDDDDD;
 }
 
-.footer {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   color: #FFFFFF;
-  background-color: #000000;
+  background-color: #333333;
   text-align: center;
+}
+
+a:link{
+  color: #177889;
+}
+a:active{color:inherit}
+a:visited{color:inherit}
+a:hover{color:inherit}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  display: block;
+}
+
+.column:hover {
+  background-color: #FFFDE0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
