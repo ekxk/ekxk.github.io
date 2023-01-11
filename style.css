@@ -16,7 +16,10 @@
 
 .nav li a {
   display: block;
-  padding: 8px;
+  color: black;
+  text-align: center;
+  padding: 8px 50px;
+  text-decoration: none;
 }
 
 /* Change the link color on hover */
@@ -26,8 +29,10 @@
 
 .footer {
   position: fixed;
+  left: 0;
   bottom: 0;
   width: 100%;
   color: white;
-  background-color: #000000;
+  background-color: black;
+  text-align: center;
 }
