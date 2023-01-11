@@ -1,0 +1,29 @@
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #EFEFEF;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  padding: 8px;
+}
+
+/* Change the link color on hover */
+.nav li a:hover {
+  background-color: #DDDDDD;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  background-color: #000000;
+}
