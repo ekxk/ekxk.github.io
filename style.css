@@ -59,9 +59,15 @@ a:hover{color:inherit}
 
 .hiking {
   background-image: url('https://thumbs2.imgbox.com/2b/84/B7ddOAj3_t.jpg');
-  image-resolution: 150dpi;
+  image-resolution: 300dpi;
   background-size:cover;
   background-position:center;
+}
+.hiking:hover {
+   background-color: #FFFDE0;
+   background-image: url(...);
+   background-repeat: no-repeat;
+   width: 100%
 }
 
 .row:after {
