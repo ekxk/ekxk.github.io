@@ -57,6 +57,12 @@ a:hover{color:inherit}
   background-color: #FFFDE0;
 }
 
+.hiking {
+  background-image: url('https://secure.ue.internxt.com/sh/file/573ca0462f4a46b8763b/05093e6a99999c37870c515a723284afc679e4dacceb8255e5fc0ef6bf3f80cf');
+  background-size:cover;
+  background-position:center;
+}
+
 .row:after {
   content: "";
   display: table;
