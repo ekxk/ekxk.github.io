@@ -58,9 +58,8 @@ a:hover{color:inherit}
 }
 
 .hiking {
-  background-image: url('https://images2.imgbox.com/64/ee/9ybjBpPZ_o.jpg');
+  background-image: url('https://thumbs2.imgbox.com/2b/84/B7ddOAj3_t.jpg');
   image-resolution: 300dpi;
-  transform: rotate(90deg);
   background-size:cover;
   background-position:center;
 }
