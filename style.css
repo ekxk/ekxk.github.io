@@ -102,3 +102,18 @@ a:hover{color:inherit}
     }
 }
 
+
+.fill-content {
+  width: 90vw;
+  height: 90vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myPic img {
+  max-width: 100%;
+  max-height: 90vh;
+  display: block;
+}
