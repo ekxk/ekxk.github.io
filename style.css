@@ -97,7 +97,7 @@ a:hover{color:inherit}
 }
 
 @media screen and (min-width: 800px) {
-    p.half_page {
+    div.half_page {
       max-width: 50%;
     }
 }
