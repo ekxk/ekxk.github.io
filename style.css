@@ -95,3 +95,10 @@ a:hover{color:inherit}
 #toc_container li, #toc_container ul, #toc_container ul li{
     list-style: outside none none !important;
 }
+
+@media screen and (min-width: 800px) {
+    p.half_page {
+      max-width: 50%;
+    }
+}
+
