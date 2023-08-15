@@ -3,7 +3,7 @@ var currentImage = document.getElementById("current-image");
 
 for (var i = 1; i <= 16; i++) {
   var thumb = document.createElement("img");
-  thumb.src = "content/hike/sobaek" + i + ".jpg";
+  thumb.src = "sobaek" + i + ".jpg";
   thumb.alt = "Image " + i;
   thumb.classList.add("thumb");
   imageThumbs.appendChild(thumb);
