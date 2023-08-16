@@ -121,12 +121,12 @@ a:hover{color:inherit}
 
 .intro { 
   text-align: center; 
-  font-family: Arial;
+  font-family: Georgia, serif;
 }
 
-h2 { 
+/*h2 { 
   font-size: 36px;
-}
+} */
 
 p { 
   font-size: 14pt;
