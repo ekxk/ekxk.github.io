@@ -207,3 +207,26 @@ border: none;
 #imag2, #imag3, #imag4, #imag5, #imag6, #imag7 {
 display: none;
 }
+
+/* md-block */
+/* ____________ */
+md-block:not([rendered]) { 
+  * {
+    /*font-family: Georgia, serif;*/
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+  }
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Black Han Sans', sans-serif;
+  }
+}
+md-block[rendered] { 
+  * {
+    /*font-family: Georgia, serif;*/
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+  }
+  h1, h2, h3, h4, h5, h6 {
+  font-family: 'Black Han Sans', sans-serif;
+  }
+}
