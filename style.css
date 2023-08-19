@@ -171,6 +171,14 @@ p {
   display: flex; 
   justify-content: center; 
   margin-top: 20px;
+  margin-right: 10px; 
+  overflow: scroll;
+}
+#image-thumbs #container {
+  width: 90vw
+}
+#image-thumbs a:hover {
+border: 6px solid #888;
 }
 
 .thumb { 
@@ -182,18 +190,17 @@ p {
   text-align: center;
   overflow: scroll;
 }
+#thumb #container {
+  width: 90vw
+}
+#thumb a:hover {
+border: 6px solid #888;
+}
+
 
 imgallery {
 border: none;
 }
 #imag2, #imag3, #imag4, #imag5, #imag6, #imag7 {
 display: none;
-}
-
-#thumb #container {
-  width: 90vw
-}
-
-#thumb a:hover {
-border: 6px solid #888;
 }
