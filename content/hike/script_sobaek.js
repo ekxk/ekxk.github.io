@@ -14,6 +14,9 @@ for (var i = 1; i <= 16; i++) {
   );
 }
 
+var width = currentImage.clientWidth;
+var height = currentImage.clientHeight;
+
 function changeImage(current) {
   var imagesNumber = 7;
   for (i=1; i<=imagesNumber; i++) {
