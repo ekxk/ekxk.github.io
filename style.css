@@ -161,10 +161,11 @@ p {
 /* ____________ */
 #image-gallery { 
   width: 90vw;
-  height: 90vh;
+  height: auto;/*90vh;*/
   /*width: 600px;*/ 
   margin: 0 auto;
 }
+
 
 #current-image { 
   /*width: 100%;*/
