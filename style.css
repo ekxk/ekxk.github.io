@@ -152,6 +152,10 @@ p {
   font-size: 14pt;
 }
 
+
+
+/* IMAGE GALLERY */
+/* ____________ */
 #image-gallery { 
   width: 90vw;
   height: 90vh;
@@ -175,4 +179,21 @@ p {
   object-fit: cover; 
   margin-right: 10px; 
   cursor: pointer;
+  text-align: center;
+  overflow: scroll;
+}
+
+imgallery {
+border: none;
+}
+#imag2, #imag3, #imag4, #imag5, #imag6, #imag7 {
+display: none;
+}
+
+#thumb #container {
+  width: 90vw
+}
+
+#thumb a:hover {
+border: 6px solid #888;
 }
