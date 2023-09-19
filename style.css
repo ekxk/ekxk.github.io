@@ -83,14 +83,28 @@ a:hover{color:inherit}
 
 .hiking {
   background-image: url('https://thumbs2.imgbox.com/2b/84/B7ddOAj3_t.jpg');
+  opacity: 0.5;
   image-resolution: 300dpi;
   background-size:cover;
   background-position:center;
 }
 .hiking:hover {
-   background-color: #FFFDE0;
-   background-image: url(...);
-   background-repeat: no-repeat;
+   /*background-color: #FFFDE0;*/
+   /*background-image: url(...);*/
+   /*background-repeat: no-repeat;*/
+   opacity: 1.0;
+   width: 33.33%
+}
+
+.cook {
+  background-image: url('https://thumbs2.imgbox.com/5a/94/d2EKXuSG_t.jpg');
+  opacity: 0.5;
+  image-resolution: 300dpi;
+  background-size:cover;
+  background-position:center;
+}
+.cook:hover {
+   opacity: 1.0;
    width: 33.33%
 }
 
