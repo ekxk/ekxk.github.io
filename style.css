@@ -87,7 +87,8 @@ a:hover{color:inherit}
   image-resolution: 300dpi;
   background-size:cover;
   background-position:center;
-  border: solid 10px transparent;
+  border: solid 10px;
+  border-color: white;
 }
 .hiking:hover {
    /*background-color: #FFFDE0;*/
@@ -104,7 +105,8 @@ a:hover{color:inherit}
   image-resolution: 300dpi;
   background-size:cover;
   background-position:center;
-  border: solid 10px transparent;
+  border: solid 10px;
+  border-color: white;
 }
 .cook:hover {
    /*background-color: #FFFDE0;*/
