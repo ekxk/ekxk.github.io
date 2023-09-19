@@ -82,32 +82,36 @@ a:hover{color:inherit}
 }
 
 .hiking {
-  background-image: url('https://thumbs2.imgbox.com/2b/84/B7ddOAj3_t.jpg');
+  background-image: url('https://images2.imgbox.com/2b/84/B7ddOAj3_o.jpg');
   /*opacity: 0.5;*/
   image-resolution: 300dpi;
   background-size:cover;
   background-position:center;
+  border: solid 10px transparent;
 }
 .hiking:hover {
-   background-color: #FFFDE0;
-   background-image: url(...);
-   background-repeat: no-repeat;
-   opacity: 0.5;
+   /*background-color: #FFFDE0;*/
+   /*background-image: url(...);*/
+   /*background-repeat: no-repeat;*/
+   border-color: #FFFDE0;
+   /*opacity: 0.5;*/
    width: 33.33%
 }
 
 .cook {
-  background-image: url('https://thumbs2.imgbox.com/ac/c7/OkGaFfPM_t.jpg');
+  background-image: url('https://images2.imgbox.com/ac/c7/OkGaFfPM_o.jpg');
   /*opacity: 0.5;*/
   image-resolution: 300dpi;
   background-size:cover;
   background-position:center;
+  border: solid 10px transparent;
 }
 .cook:hover {
-   background-color: #FFFDE0;
-   background-image: url(...);
-   background-repeat: no-repeat;
-   opacity: 0.5;
+   /*background-color: #FFFDE0;*/
+   /*background-image: url(...);*/
+   /*background-repeat: no-repeat;*/
+   border-color: #FFFDE0;
+   /*opacity: 0.5;*/
    width: 33.33%
 }
 
