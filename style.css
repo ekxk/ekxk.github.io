@@ -188,6 +188,39 @@ p {
   font-size: 14pt;
 }
 
+/* BLOG POST LISTS */
+/* ____________ */
+#related_links {
+        width: 12em;
+        border-right: 1px solid #000;
+        padding: 0 0 1em 0;
+        margin-bottom: 1em;
+        /*font-family: 'Trebuchet MS', 'Lucida Grande',
+        Verdana, Lucida, Geneva, Helvetica, 
+        Arial, sans-serif; */
+        background-color: #FFFFFF;
+        color: #000;
+        }
+
+    #related_links ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        border: none;
+        }
+        
+    #related_links li {
+        border-bottom: 1px solid #7A918D;
+        margin: 0;
+        }
+
+    #related_links li a:hover {
+        border-left: 10px solid #1c64d1;
+        border-right: 10px solid #5ba3e0;
+        background-color: #99C2A2;
+        color: #000;
+        }
+
 
 
 /* IMAGE GALLERY */
