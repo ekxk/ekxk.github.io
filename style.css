@@ -78,7 +78,7 @@ a:hover{color:inherit}
 }
 
 .column:hover {
-  background-color: #FA9F42 /*#FFFDE0*/;
+  background-color: #FFBA49 /*#FFFDE0*/;
 }
 
 .hiking {
@@ -94,7 +94,7 @@ a:hover{color:inherit}
    /*background-color: #FFFDE0;*/
    /*background-image: url(...);*/
    /*background-repeat: no-repeat;*/
-   border-color: #FFFDE0;
+   border-color: #FFBA49;
    /*opacity: 0.5;*/
    width: 33.33%
 }
@@ -112,7 +112,7 @@ a:hover{color:inherit}
    /*background-color: #FFFDE0;*/
    /*background-image: url(...);*/
    /*background-repeat: no-repeat;*/
-   border-color: #FFFDE0;
+   border-color: #FFBA49;
    /*opacity: 0.5;*/
    width: 33.33%
 }
