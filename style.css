@@ -78,7 +78,7 @@ a:hover{color:inherit}
 }
 
 .column:hover {
-  background-color: #FFFDE0;
+  background-color: #FA9F42 /*#FFFDE0*/;
 }
 
 .hiking {
