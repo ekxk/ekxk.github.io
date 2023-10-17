@@ -1,3 +1,5 @@
+/* || Header and Main Navigation */
+/* || FONTS */
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
@@ -68,6 +70,7 @@ a:active{color:inherit}
 a:visited{color:inherit}
 a:hover{color:inherit}
 
+/* || index page columns */
 .column {
   float: left;
   width: 33.33%;
@@ -188,6 +191,7 @@ p {
   font-size: 14pt;
 }
 
+/* || BLOG POST */
 /* BLOG POST LISTS */
 /* ____________ */
 #related_links {
@@ -222,7 +226,7 @@ p {
         }
 
 
-
+/* || Image gallery */
 /* IMAGE GALLERY */
 /* ____________ */
 #image-gallery { 
@@ -299,3 +303,53 @@ md-block[rendered] {
   font-family: 'Black Han Sans', sans-serif;
   }
 }
+
+/* || Book read review */
+/* ____________ Book read review start ____________ */
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ____________ Book read review done ____________ */
