@@ -1,140 +1,188 @@
 /* || Header and Main Navigation */
-/* || FONTS */
-@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
-@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
-@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
-@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}
-@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');}
-@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
-
-* {
-  /*font-family: Georgia, serif;*/
-  font-family: 'Noto Sans KR', sans-serif;
-  box-sizing: border-box;
-}
-
-/*.kr { font-family: 'Noto Sans KR', sans-serif; }
-.en { font-family: Georgia, serif; }
-*/
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Black Han Sans', sans-serif;
-}
-
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #EFEFEF;
-}
-
-nav li {
-  float: left;
-}
-
-nav li a {
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 8px 50px;
-  text-decoration: none;
-}
-
-/* Change the link color on hover */
-nav li a:hover {
-  background-color: #DDDDDD;
-}
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #101010;
+    align-items:center;
+  }
+  nav li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 8px 20px;
+    text-decoration: none;
+  }
 
 body {
-  min-height: 400px;
-  margin-bottom: 60px;
-  clear: both;
-}
+    background-color: #101010;
+    color: #ffffff;
+    font-family: 'Archivo', sans-serif;
+  }
+  h1 {
+    color: #ffffff;
+  }
+  nav a {
+    color: #ffffff;
+  }
+  footer {
+    color: #ffffff;
+  }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  height: 60px;
-  width: 100%;
-  color: #FFFFFF;
-  background-color: #333333;
-  text-align: center;
-}
+  a {
+    text-decoration: none;
+  }
 
-a:link{
-  color: #177889;
-}
-a:active{color:inherit}
-a:visited{color:inherit}
-a:hover{color:inherit}
+  a:link, a:visited {
+    color: #ffffff;
+  }
 
-/* || index page columns */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-  height: 300px;
-  font-size: 65%;
-  display: block;
-}
+  a:hover {
+    color:gold;
+  }
 
-.column:hover {
-  background-color: #FFBA49 /*#FFFDE0*/;
-}
+  #boxes {
+      width: 960px;
+      background-color: #101010;
+      text-align: center;
+      float: left;
+      
+    }
+  
+  #boxes .box {
+      width: 200px;
+      height: 200px;
+  
+      margin: 10px;
+      display: inline-block;
+  
+      background-color: #101010;
+      border:1px solid #ffffff;
+    }
+  
+  @media (max-width: 800px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+      #boxes {
+      width:560px;
+      background-color: #101010;
+      text-align: center;
+      float: left;
+    }
+  
+    #boxes .box {
+      width: 20vw;
+      height: 150px;
+  
+      margin: 5px;
+      display: inline-block;
+  
+      background-color: #101010;
+      border:1px solid #ffffff;
+    }
+  }
 
-.hiking {
-  background-image: url('https://images2.imgbox.com/2b/84/B7ddOAj3_o.jpg');
-  /*opacity: 0.5;*/
-  image-resolution: 300dpi;
-  background-size:cover;
-  background-position:center;
-  border: solid 10px;
-  border-color: white;
-}
-.hiking:hover {
-   /*background-color: #FFFDE0;*/
-   /*background-image: url(...);*/
-   /*background-repeat: no-repeat;*/
-   border-color: #FFBA49;
-   /*opacity: 0.5;*/
-   width: 33.33%
-}
+  @media (max-width: 500px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+      #boxes {
+      width: 300px;
+      background-color: #101010;
+      text-align: center;
+      float: left;
+    }
+  
+    #boxes .box {
+      width: 200px;
+      height: 200px;
+  
+      margin: 5px;
+      display: inline-block;
+  
+      background-color: #101010;
+      border:1px solid #ffffff;
+    }
 
-.cook {
-  background-image: url('https://images2.imgbox.com/ac/c7/OkGaFfPM_o.jpg');
-  /*opacity: 0.5;*/
-  image-resolution: 300dpi;
-  background-size:cover;
-  background-position:center;
-  border: solid 10px;
-  border-color: white;
-}
-.cook:hover {
-   /*background-color: #FFFDE0;*/
-   /*background-image: url(...);*/
-   /*background-repeat: no-repeat;*/
-   border-color: #FFBA49;
-   /*opacity: 0.5;*/
-   width: 33.33%
-}
+    #boxes .box2 {
+      width: 200px;
+      height: 200px;
+  
+      margin: 5px;
+      display: inline-block;
+  
+      background-color: #101010;
+    }
+  }
+  
+  #boxes_left {
+      width: 50vw;
+      background-color: #101010;
+      text-align: left;
+      float: left;
+    }
+  
 
-/*not used*/
-.slide-overlay {
-    position: absolute;
-     top: 0;
-    left: 0;
-    width: 33.33%;
-    /*height: 100%;*/
-    background-color: rgba(0,0,0,0.6)!important;
-}
+    .column {
+        float:left;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        font-size: 65%;
+        margin: 5px;
+        margin-left: 20px;
+        display: block;
+        background-color: #101010;
+        border:1px solid #ffffff;
+      }
+      
+      .column:hover {
+        background-color:dimgray;
+      }
+      
+      .hiking {
+        float:left;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        font-size: 65%;
+        margin: 5px;
+        margin-left: 20px;
+        display: block;
+        background-color: #101010;
+        border:1px solid #ffffff;
+      }
+      .hiking:hover {
+        background-image: url('https://images2.imgbox.com/2b/84/B7ddOAj3_o.jpg');
+        image-resolution: 300dpi;
+        background-size:cover;
+        background-position:center;
+      }
+      
+      .cook {
+        float:left;
+        width: 200px;
+        height: 200px;
+        padding: 10px;
+        font-size: 65%;
+        margin: 5px;
+        margin-left: 20px;
+        display: block;
+        background-color: #101010;
+        border:1px solid #ffffff;
+      }
+      .cook:hover {
+        background-image: url('https://images2.imgbox.com/ac/c7/OkGaFfPM_o.jpg');
+        image-resolution: 300dpi;
+        background-size:cover;
+        background-position:center;
+        
+      }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
 
 #toc_container {
     background: #f9f9f9 none repeat scroll 0 0;
