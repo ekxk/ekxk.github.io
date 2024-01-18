@@ -404,8 +404,15 @@ div.desc {
 
 /* || experimental page */
 /* ____________ experimental page start ____________ */
+#boxesexp {
+      width: 960px;
+      background-color: #101010;
+      text-align: center;
+      float: left;
+      
+    }
 /* Split the screen in half */
-.split {
+#boxesexp .split {
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -415,18 +422,18 @@ div.desc {
 }
 
 /* Control the left side */
-.left {
+#boxesexp .left {
   left: 0;
   width: 30%;
 }
 
 /* Control the right side */
-.right {
+#boxesexp .right {
   right: 0;
   width: 70%;
 }
  
-.boxesatsplit {
+#boxesexp .boxesatsplit {
       width: 200px;
       height: 200px;
       padding:10px;
