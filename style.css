@@ -425,6 +425,7 @@ div.desc {
 #boxesexp .left {
   left: 0;
   width: 30%;
+  padding: 8px 20px;
 }
 
 /* Control the right side */
@@ -439,6 +440,7 @@ div.desc {
       padding:10px;
       overflow:auto;
       margin: 10px;
+      font-size: 65%;
       display: inline-block;
       background-color: #101010;
       border:1px solid #ffffff;
