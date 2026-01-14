@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Discipline Tracker v1</title>
+
+<?
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 420px;
+      margin: 30px auto;
+      padding: 0 16px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .date {
+      text-align: center;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      padding: 12px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.2);
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 16px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      background: #222;
+      color: white;
+    }
+
+    button:active {
+      opacity: 0.8;
+    }
+  </style>
+?>
+  
+</head>
+<body>
+
+  <h1>Discipline Tracker</h1>
+  <div class="date" id="today"></div>
+
+  <!-- ACTIONS -->
+  <label>
+    <input type="checkbox" id="pushup"> Push-up
+  </label>
+
+  <label>
+    <input type="checkbox" id="dumbbell"> Dumbbell
+  </label>
+
+  <label>
+    <input type="checkbox" id="deadHang"> Dead hang
+  </label>
+
+  <button onclick="exportCSV()">Export CSV</button>
+
+  <script>
+    /**********************
+     * CONFIG — EDIT HERE LATER
+     **********************/
+    const ACTIONS = ["pushup", "dumbbell", "deadHang"];
+
+    /**********************
+     * DATE
+     **********************/
+    const today = new Date().toISOString().slice(0, 10);
+    document.getElementById("today").textContent = today;
+
+    /**********************
+     * LOAD DATA
+     **********************/
+    const STORAGE_KEY = "disciplineTracker";
+    const allData = JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
+
+    if (!allData[today]) {
+      allData[today] = {};
+    }
+
+    ACTIONS.forEach(action => {
+      const checkbox = document.getElementById(action);
+      checkbox.checked = !!allData[today][action];
+
+      checkbox.addEventListener("change", () => {
+        allData[today][action] = checkbox.checked;
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(allData));
+      });
+    });
+
+    /**********************
+     * EXPORT CSV
+     **********************/
+    function exportCSV() {
+      let header = ["date", ...ACTIONS];
+      let rows = [header.join(",")];
+
+      for (const date in allData) {
+        const row = [date];
+        ACTIONS.forEach(action => {
+          row.push(allData[date][action] ? 1 : 0);
+        });
+        rows.push(row.join(","));
+      }
+
+      const blob = new Blob([rows.join("\n")], { type: "text/csv" });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "discipline_tracker.csv";
+      a.click();
+
+      URL.revokeObjectURL(url);
+    }
+  </script>
+
+</body>
+</html>
